@@ -63,4 +63,8 @@ print("User ID and Name pickled into a file! ")
 lstNewCustomerInfo = read_data_from_file(strFileName)
 print("Reading from file...This is the data that was unpickled: ")
 print(lstNewCustomerInfo)
+```
+## What does the binary pickled data look like?
+Here is the output of the script using Pycharm (see Figure 1).  The data is stored in a list.  Figure 2 shows my command shell ouput.
+
 
