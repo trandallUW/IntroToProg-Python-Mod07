@@ -68,3 +68,48 @@ print(lstNewCustomerInfo)
 Here is the output of the script using Pycharm (see Figure 1).  The data is stored in a list.  Figure 2 shows my command shell ouput.
 ![Figure1](https://github.com/trandallUW/IntroToProg-Python-Mod07/blob/main/docs/pickle_pycharm.png)"Figure 1"
 
+![Figure2](https://github.com/trandallUW/IntroToProg-Python-Mod07/blob/main/docs/pickle_cmd.png)"Figure 2"
+
+This is the data output into a binary file.  Not the same as a list!
+� � ]�(� dawg��steve�e.
+
+## Exception Handling  - Intro to handling errors
+
+When you are developing code, it’s likely that you will be working on a team and someone else will be collaborating with you on your code.  It’s likely that during this collaboration there will be errors in the code.  Python has built in error messages that are not usually intuitive.  Thus, using Exception Handling is a good way to build in custom error messages that are easy to understand by others.  One simple way to input exception handling is to use the “try” and “except” functions.  Try is usually followed by a statement, and if that set of code doesn’t execute properly, it will go the “except” statement.  Typically, you can use the print() function to print to the user an error that is easy to understand.   Take my previous coding example that described how to use the pickling function.  
+
+What if the save_data_to_file () function didn’t execute properly?  Well, use the “try” and “except” function to print out a potential error message for this situation.    
+
+Or what if the read_data_from_file() function got all messed up by your coworker?  Well, that’s a great situation to plan for and put in an error message.
+Here's the same “Main Body Script” code used in my pickling example with some exception handling – notice the try and except code.  
+
+```
+# Main Body of Script ----------------------------- #
+# Store the list object into a binary file
+try:
+    save_data_to_file(strFileName, lstCustomer)
+    print("User ID and Name pickled into a file! ")
+except:
+    print("Error!  The data was not saved to file ")
+
+
+# Read the data from the file into a new list object and display the contents
+try:
+    lstNewCustomerInfo = read_data_from_file(strFileName)
+    print("Reading from file...This is the data that was unpickled: ")
+    print(lstNewCustomerInfo)
+except:
+    print("Error!  The data was not read from file ")
+```
+
+Figure 3 shows my Pycharm output for these error messages.  Figure 4 shows my output in command shell.  
+
+![Figure3](https://github.com/trandallUW/IntroToProg-Python-Mod07/blob/main/docs/error_pycharm.png)"Figure 3"
+
+![Figure4](https://github.com/trandallUW/IntroToProg-Python-Mod07/blob/main/docs/error_cmd.png)"Figure 3"
+
+### Summary
+
+Pickling is a great way to convert your data in order to “serialize” it and make it easier to store or send over a network.  Exception Handling is a foundational way to develop custom error messages that are easy to understand by humans.  Both Python functions are foundational for any programmer or data analyst to know.  There are great resources on the internet to find out more info on these functions. 
+
+
+
