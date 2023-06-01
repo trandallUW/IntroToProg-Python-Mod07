@@ -105,7 +105,7 @@ Figure 3 shows my Pycharm output for these error messages.  Figure 4 shows my ou
 
 ![Figure3](https://github.com/trandallUW/IntroToProg-Python-Mod07/blob/main/docs/errors_pycharm.png)"Figure 3"
 
-![Figure4](https://github.com/trandallUW/IntroToProg-Python-Mod07/blob/main/docs/errors_cmd.png)"Figure 3"
+![Figure4](https://github.com/trandallUW/IntroToProg-Python-Mod07/blob/main/docs/errors_cmd.png)"Figure 4"
 
 ### Summary
 
