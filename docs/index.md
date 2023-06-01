@@ -66,5 +66,5 @@ print(lstNewCustomerInfo)
 ```
 ## What does the binary pickled data look like?
 Here is the output of the script using Pycharm (see Figure 1).  The data is stored in a list.  Figure 2 shows my command shell ouput.
-
+[Figure1](https://github.com/trandallUW/IntroToProg-Python-Mod07/blob/main/docs/pickle_pycharm.png)"Figure 1"
 
